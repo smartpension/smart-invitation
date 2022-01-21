@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   root: true,
@@ -19,7 +19,9 @@ module.exports = {
   env: {
     browser: true,
   },
-  rules: {},
+  rules: {
+    semi: ['error', 'never'],
+  },
   overrides: [
     // node files
     {
@@ -55,4 +57,4 @@ module.exports = {
       extends: ['plugin:qunit/recommended'],
     },
   ],
-};
+}
