@@ -13,22 +13,23 @@
                 <div class='col-2'>
                   <div class='input-group-desc'>
                     <input
-                      id='user-question'
                       class='input--style-5'
                       type='text'
                       name='first_name'
+                      id='first-name-input'
                     />
-                    <label class='label--desc'>first name</label>
+                    <label class='label--desc' for='first-name-input'>first name</label>
                   </div>
                 </div>
                 <div class='col-2'>
                   <div class='input-group-desc'>
-                    <Input
+                    <input
                       class='input--style-5'
                       type='text'
                       name='last_name'
+                      id='last-name-input'
                     />
-                    <label class='label--desc'>last name</label>
+                    <label class='label--desc' for='last-name-input'>last name</label>
                   </div>
                 </div>
               </div>
@@ -38,7 +39,12 @@
             <div class='name'>Email</div>
             <div class='value'>
               <div class='input-group'>
-                <input class='input--style-5' type='email' name='email' />
+                <input
+                  class='input--style-5'
+                  type='email'
+                  name='email'
+                  aria-label='email'
+                />
               </div>
             </div>
           </div>
@@ -52,14 +58,20 @@
                       class='input--style-5'
                       type='text'
                       name='area_code'
+                      id='area-code-input'
                     />
-                    <label class='label--desc'>Area Code</label>
+                    <label class='label--desc' for='area-code-input'>Area Code</label>
                   </div>
                 </div>
                 <div class='col-9'>
                   <div class='input-group-desc'>
-                    <input class='input--style-5' type='text' name='phone' />
-                    <label class='label--desc'>Phone Number</label>
+                    <input
+                      class='input--style-5'
+                      type='text'
+                      name='phone'
+                      id='phone-input'
+                    />
+                    <label class='label--desc' for='phone-input'>Phone Number</label>
                   </div>
                 </div>
               </div>
@@ -75,6 +87,7 @@
                     name='subject'
                     tabindex='-1'
                     aria-hidden='true'
+                    aria-label='select your comapany'
                   >
                     <option disabled='disabled' selected='selected'>Choose your
                       company</option>

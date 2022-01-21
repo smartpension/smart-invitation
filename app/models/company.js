@@ -1,3 +1,3 @@
 import Model from '@ember-data/model'
 
-export default class CompanyModel extends Model { }
+export default class CompanyModel extends Model {}
